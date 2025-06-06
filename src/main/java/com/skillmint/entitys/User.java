@@ -1,20 +1,15 @@
 package com.skillmint.entitys;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import jakarta.persistence.*;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
+@Table(name = "app_user")
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class User {
 
     @Id
